@@ -56,3 +56,16 @@ end
 
 # testing the get_word func 
 puts get_word('-- -.--')
+
+def get_bottle(current_bottle)
+    bottle_arr = current_bottle.split('  ')
+    bottle = ''
+    bottle_arr.each do |letter|
+      bottle += get_word(letter)
+      bottle += ' '
+    end
+    bottle
+  end
+  
+  # testing the get_bottle func
+  puts get_bottle('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
