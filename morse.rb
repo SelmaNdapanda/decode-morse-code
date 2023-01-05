@@ -41,3 +41,18 @@ def get_letter(letter)
     @current_letter = $dictionary[letter]
     return @current_letter
 end
+
+# testing the get_letter func
+puts get_letter('-...')
+
+def get_word(current_word)
+  word_arr = current_word.split
+  word = ''
+  word_arr.each do |letter|
+    word += get_letter(letter)
+  end
+  word
+end
+
+# testing the get_word func 
+puts get_word('-- -.--')
