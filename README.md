@@ -59,7 +59,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Decode Morse Message <a name="about-project"></a>
 
-> This is Decode Morse Message is my first project in ruby prgramming language and it convert morse message to human readable form.
+> This is Decode Morse Message is our first project in ruby prgramming language and it convert morse message to human readable form.
 
 **Decode Morse Message** is the ruby methods project that convert morse messages.
 
@@ -131,7 +131,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
  - mkdir my-folder
  - cd my-folder
- - git clone [(git@github.com:SaboorSohaib/Decode-Morse-Message.git)]
+ - git clone [(git@github.com:SelmaNdapanda/decode-morse-code.git)]
 
 
 ### Install
