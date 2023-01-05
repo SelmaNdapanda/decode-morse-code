@@ -1,4 +1,4 @@
-$dictionary = {
+@dictionary = {
   '.-' => 'A',
   '-...' => 'B',
   '-.-.' => 'C',
@@ -38,8 +38,7 @@ $dictionary = {
 }
 
 def get_letter(letter)
-  @current_letter = $dictionary[letter]
-  return @current_letter
+  @dictionary[letter]
 end
 
 # testing the get_letter func
@@ -54,18 +53,18 @@ def get_word(current_word)
   word
 end
 
-# testing the get_word func 
+# testing the get_word func
 puts get_word('-- -.--')
 
 def get_bottle(current_bottle)
-    bottle_arr = current_bottle.split('  ')
-    bottle = ''
-    bottle_arr.each do |letter|
-      bottle += get_word(letter)
-      bottle += ' '
-    end
-    bottle
+  bottle_arr = current_bottle.split('  ')
+  bottle = ''
+  bottle_arr.each do |letter|
+    bottle += get_word(letter)
+    bottle += ' '
   end
-  
-  # testing the get_bottle func
-  puts get_bottle('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+  bottle
+end
+
+# testing the get_bottle func
+puts get_bottle('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
